@@ -23,14 +23,12 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={inter.className}>
-                {/* <div className="bg-gray-400 h-screen w-screen"> */}
-                <Providers>
-                    <Header />
-                    {/* <div className="bg-gray-200 container mx-auto px-4 max-w-4xl"> */}
-                    {children}
-                    {/* </div> */}
-                </Providers>
-                {/* </div> */}
+                <div className="container mx-auto px-4 max-w-6xl">
+                    <Providers>
+                        <Header />
+                        {children}
+                    </Providers>
+                </div>
             </body>
         </html>
     );
